@@ -1,14 +1,11 @@
-interface Logo {
-  link: string;
-  src: string;
-}
+import {Logo} from '@/app/Interfaces/Logo'
 const Logos: Array<Logo> = [
   {
-    link: "github",
+    link: "https://github.com/kasunSujeewa",
     src: "logos/github.png",
   },
   {
-    link: "Linkdln",
+    link: "https://www.linkedin.com/in/kasun-ranasinghe-126022181/",
     src: "logos/linkedin.png",
   },
   {
@@ -16,7 +13,7 @@ const Logos: Array<Logo> = [
     src: "logos/instagram.png",
   },
   {
-    link: "FaceBook",
+    link: "https://web.facebook.com/kasun.sujeewa",
     src: "logos/facebook.png",
   },
 ];

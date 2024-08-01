@@ -8,7 +8,7 @@ import splitStringUsingRegex from "../utils/splitStringUsingRegex";
 function DetailsCard() {
     const mainHeader = "Hii Im Kasun Ranasinghe";
     const designation = "Software Engineer";
-    const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quo asperiores laborum ad aperiam eaque rerum illum esse ratione, aliquam eos, mollitia incidunt veniam perspiciatis distinctio. Perspiciatis praesentium earum iste."
+    const description = "I excel in both front-end and back-end technologies, including React, Next, Vue, Laravel, PHP, NestJS and NodeJS, and have a deep understanding of database management and server configuration. I have successfully delivered numerous projects across diverse industries, such as healthcare, education, and finance, creating responsive and user-friendly web applications that meet client requirements and industry standards."
 
     const animatedHeader = splitStringUsingRegex(mainHeader);
     const animatedDesignation = splitStringUsingRegex(designation);
@@ -29,10 +29,10 @@ function DetailsCard() {
                     whileInView="reveal"
                     transition={{ staggerChildren: 0.02 }}
                 >
-                    {animatedHeader.map((char) => {
+                    {animatedHeader.map((char,index) => {
                         return (
                             <motion.span
-                                key={char}
+                                key={index}
                                 transition={{ duration: 0.5 }}
                                 variants={charVariants}>{char}</motion.span>
                         )
@@ -44,10 +44,10 @@ function DetailsCard() {
                 <motion.div className="text-2xl" initial="hidden"
                     whileInView="reveal"
                     transition={{ staggerChildren: 0.02 }}>
-                    {animatedDesignation.map((char) => {
+                    {animatedDesignation.map((char,index) => {
                         return (
                             <motion.span
-                                key={char}
+                                key={index}
                                 transition={{ duration: 0.5 }}
                                 variants={charVariants}>{char}</motion.span>
                         )
@@ -59,10 +59,10 @@ function DetailsCard() {
                 <motion.div className="text-xl" initial="hidden"
                     whileInView="reveal"
                     transition={{ staggerChildren: 0.02 }}>
-                    {animatedDescription.map((char) => {
+                    {animatedDescription.map((char,index) => {
                         return (
                             <motion.span
-                                key={char}
+                                key={index}
                                 transition={{ duration: 0.5 }}
                                 variants={charVariants}>{char}</motion.span>
                         )

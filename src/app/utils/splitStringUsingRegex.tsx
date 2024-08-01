@@ -1,6 +1,6 @@
 function splitStringUsingRegex(input:string): string[] {
     const characters: string[] = [];
-    const regex = /[\s\S]/gu;
+    const regex = /[\s\S]/g;
 
     let match;
 

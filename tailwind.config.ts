@@ -54,8 +54,9 @@ const config = {
         },
       },
       backgroundImage: {
-        'custom-image': "url('pexels-iriser-1366957.jpg')",
-        'author-image': "url('author.jpg')",
+        'home-image': "url('pexels-pixabay-158229.jpg')",
+        'other-image': "url('pexels-harold-vasquez-853421-2653362.jpg')",
+        'author-image': "url('author-copy-latest.png')",
         
       },
       borderRadius: {

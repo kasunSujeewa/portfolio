@@ -25,7 +25,7 @@ function NavLinks() {
             {links.map((link, index) => {
                 return (
                     <div key={index}>
-                        <Link href={link.path} className={`${pathName === link.path && "border-b-2 border-white"}`}>
+                        <Link href={link.path} key={index} className={`${pathName === link.path && "border-b-2 border-white"}`}>
                             {link.name}
                         </Link>
                     </div>

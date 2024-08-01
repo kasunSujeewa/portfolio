@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/carousel"
 import images from "./images";
 import Autoplay from "embla-carousel-autoplay"
+import { motion } from "framer-motion";
+
 
 
 function SkillCarousel() {
@@ -20,7 +22,7 @@ function SkillCarousel() {
     return (
         <div className="my-auto h-full content-center">
 
-            <div className="grid grid-cols-1 justify-center mx-20 my-40">
+            <div className="grid grid-cols-1 justify-center mx-20 my-20">
                 <Carousel
                     opts={{
                         align: "start",
@@ -38,8 +40,10 @@ function SkillCarousel() {
                                     <Card className="flex aspect-video">
                                         <img src={image.src} alt="" className="h-full w-full" />
                                     </Card>
-                                    <CardContent className="text-center text-lg pt-5">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere assumenda ab, in quod aspernatur officia et cum. Eos natus fugiat minus, tempora quaerat ipsum ea minima dolores consectetur, accusantium dolorum.
+                                    <CardContent className="text-center text-lg pt-5 pb-10">
+                                    <motion.div whileHover={{scale:1.1}}>
+                                        {image.description}
+                                    </motion.div>
                                     </CardContent>
                                 </div>
                             </CarouselItem>

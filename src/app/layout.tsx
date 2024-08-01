@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${oswald.className} bg-custom-image bg-cover bg-center bg-fixed bg-no-repeat relative text-white`}>
+      <body className={`${oswald.className} bg-home-image bg-cover bg-center bg-fixed bg-no-repeat relative text-white`}>
         <StairTransition />
         <Header />
         <PageTransition>
