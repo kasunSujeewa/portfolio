@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 </ul>
                             </CardContent>
                             <CardFooter className="justify-center">
-                                <a href={project.link} target="_blank" className="underline">Visit Site</a>
+                                <a href={project.link} target="_blank" className="underline decoration-solid text-blue-600">Visit Site</a>
                             </CardFooter>
                         </Card>
                     </motion.div>
@@ -60,7 +60,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 {project.description}
                             </CardContent>
                             <CardFooter className="justify-center">
-                                <a href="#">More Info</a>
+                                <a className="underline decoration-solid text-blue-600" href="#">More Info</a>
                             </CardFooter>
                         </Card>
                     </motion.div>

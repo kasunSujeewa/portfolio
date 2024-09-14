@@ -4,7 +4,7 @@ import {Project} from '../../Interfaces/Project'
         title: 'Portfolio',
         description: 'This project was created to express myself and share my skills. Through this portfolio, I aim to showcase my expertise in various technologies and demonstrate the projects I have successfully delivered.',
         link: 'https://me.thecoolcode.com/',
-        languages: ['Next JS', 'Tailwind CSS', 'Farmer Motion','Shadecn UI']
+        languages: ['Next JS', 'Tailwind CSS', 'Framer Motion','Shadecn UI']
     },
     {
         title: 'MarketPlace Demo',

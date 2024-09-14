@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 function ButtonDownload() {
     const handleDownload = () => {
-        const fileUrl = 'cv/cv.pdf'; // Update with your file name
+        const fileUrl = 'cv/Kasun-Ranasinghe-SE.pdf'; // Update with your file name
     
         // Create a link element
         const link = document.createElement('a');
         link.href = fileUrl;
-        link.download = 'cv.pdf'; // Set the file name
+        link.download = 'Kasun-Ranasinghe-SE.pdf'; // Set the file name
     
         // Append the link to the body
         document.body.appendChild(link);
